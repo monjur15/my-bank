@@ -10,8 +10,11 @@ document.getElementById('login-btn').addEventListener('click', function () {
     const userPassword = passwordField.value;
     // console.log(passwordField);
 
+    // check email and password
     if (userEmail == 'hellojs@gmail.com' && userPassword == 'js2021') {
         window.location.href = 'banking.html';
+    } else {
+        console.log(alert('Wrong Input'));
     }
 
 })
