@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <h1 class="text-5xl text-center mt-8">Let's Get Some <span class="font-bold text-pink-400">Moooooney</span>..!!
+        <h1 class="text-5xl text-center mt-8">Let's Get Some <span class="font-bold text-blue-500">Moooooney</span>..!!
         </h1>
     </header>
 
@@ -23,15 +23,15 @@
             <div class="grid grid-cols-3  gap-4">
                 <div class="bg-blue-300 p-8 rounded-3xl text-white">
                     <h3 class="text-2xl">Deposite</h3>
-                    <h4 class="text-4xl">$00</h4>
+                    <h4 class="text-4xl">$ <span id="deposite-total">00</span> </h4>
                 </div>
                 <div class="bg-red-300 p-8 rounded-3xl text-white">
                     <h3 class="text-2xl">Withdraw</h3>
-                    <h4 class="text-4xl">$00</h4>
+                    <h4 class="text-4xl">$ <span id="withdraw-total">00</span></h4>
                 </div>
                 <div class="bg-green-300 p-8 rounded-3xl  text-white">
                     <h3 class="text-2xl">Balance</h3>
-                    <h4 class="text-4xl">$1200</h4>
+                    <h4 class="text-4xl">$ <span id="balance-total">1200</span></h4>
                 </div>
 
             </div>
@@ -47,12 +47,12 @@
                     <div>
 
 
-                        <input id="deposite-input" class="border block w-2/4 border-gray-400 rounded mb-4 px-2"
+                        <input id="deposit-input" class="border block w-2/4 border-gray-400 rounded mb-4 px-2"
                             type="text" placeholder="$ amount you want to deposite">
 
 
 
-                        <button id="deposite-btn"
+                        <button id="deposit-btn"
                             class="bg-yellow-600 px-4 py-2 rounded text-white font-medium">Deposite</button>
                     </div>
                 </div>
@@ -68,13 +68,16 @@
 
 
                         <button id="withdraw-btn"
-                            class="bg-yellow-600 px-4 py-2 rounded text-white font-medium">Withdraw</button>
+                            class="bg-purple-600 px-4 py-2 rounded text-white font-medium">Withdraw</button>
                     </div>
                 </div>
 
             </div>
         </section>
     </main>
+
+
+    <script src="js/banking.js"></script>
 
 
 </body>
